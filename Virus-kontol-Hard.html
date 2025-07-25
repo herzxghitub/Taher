@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>☢️ VIRUS TERDETEKSI ⚠️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #000;
+      height: 100%;
+      touch-action: none;
+      user-select: none;
+    }#warning, #glitchText {
+  position: absolute;
+  font-size: 8vw;
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+#warning {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff0000;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+  animation: spin 0.6s linear infinite, flicker 0.15s infinite;
+}
+
+#glitchText {
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: lime;
+  text-shadow: 0 0 3px lime;
+  animation: flicker 0.1s infinite alternate;
+}
+
+body.rgb-bg {
+  animation: backgroundRGB 0.3s infinite;
+}
+
+@keyframes backgroundRGB {
+  0%   { background-color: #000; }
+  25%  { background-color: #0f0; }
+  50%  { background-color: #f00; }
+  75%  { background-color: #000; }
+  100% { background-color: #000; }
+}
+
+@keyframes spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes flash {
+  0%, 100% { background: #000; }
+  25% { background: #0f0; }
+  50% { background: #000; }
+  75% { background: #000; }
+}
+
+.flash {
+  animation: flash 0.2s steps(1, end) infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.virtex {
+  position: absolute;
+  font-size: 12px;
+  color: #fff;
+  animation: rgbtext 0.3s infinite alternate, fall 07s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rgbtext {
+  0% { color: red; }
+  33% { color: lime; }
+  66% { color: cyan; }
+  100% { color: yellow; }
+}
+
+@keyframes fall {
+  0% { transform: translateY(-100px); opacity: 1; }
+  100% { transform: translateY(110vh); opacity: 0; }
+}
+
+.shake {
+  animation: shakeScreen 0.2s infinite;
+}
+
+@keyframes shakeScreen {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-10px, 5px); }
+  50% { transform: translate(10px, -5px); }
+  75% { transform: translate(-5px, 10px); }
+  100% { transform: translate(5px, -10px); }
+}
+
+  </style>
+</head>
+<body background="url(tiktokio.com_MH3iuFdTloNxuHHsgmXy.jpg)">
+  <div id="warning">🔥 VIRUS TERDETEKSI 🔥</div>
+  <div id="warning">☢️ VIRUS TERDETEKSI ⚠️</div>
+  <div id="glitchText">💀 SISTEM RUSAK TOTAL 💀</div>
+  <div id="glitchText">💀 SISTEM RUSAK TOTAL 💀</div>
+ <div id="glitchText">💀 SISTEM RUSAK TOTAL 💀</div>
+ <div id="glitchText">💀 SISTEM RUSAK TOTAL 💀</div>
+ <div id="glitchText">💀 SISTEM RUSAK TOTAL 💀</div>
+ <div id="glitchText">💀 SISTEM RUSAK TOTAL 💀</div>
+<audio id="audio" src="suara.mp3" autoplay></audio>  <script>
+    function requestFull() {
+      const el = document.documentElement;
+      if (el.requestFullscreen) el.requestFullscreen();
+      else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+      else if (el.msRequestFullscreen) el.msRequestFullscreen();
+    }
+
+    function startVibration() {
+      if (navigator.vibrate) {
+        const pattern = [500, 300, 500, 200, 800, 200, 1000, 15000];
+        navigator.vibrate(pattern);
+        setInterval(() => navigator.vibrate(pattern), 30000);
+      }
+    }
+
+    async function startAudio() {
+      try {
+        await document.getElementById('song').play();
+      } catch (_) {
+        const tryPlay = () => {
+          document.getElementById('song').play();
+          document.removeEventListener('touchstart', tryPlay);
+          document.removeEventListener('click', tryPlay);
+        };
+        document.addEventListener('touchstart', tryPlay);
+        document.addEventListener('click', tryPlay);
+      }
+    }
+
+    function startFlash() {
+      document.body.classList.add('flash');
+    }
+
+    function startShake() {
+      document.body.classList.add('shake');
+    }
+
+    function spawnVirtexText() {
+      for (let i = 0; i < 100; i++) {
+        const span = document.createElement('span');
+        span.className = 'virtex';
+        span.innerText = 'KONTOL-kontolᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠ⚔ᅠᅠ⠀᠌ᅠᅠᅠᅠ⠀᠌ᅠᅠ⚔☢ή•tͣaͫher⚔☢ή•tͣaͫher⚔☢ή•tͣaͫher⚔☢ή•tͣaͫher⚔☢ή•tͣaͫher⚔☢ή•tͣaͫher⚔☢ή•tͣaͫher⚔.';
+        span.style.left = Math.random() * window.innerWidth + 'px';
+        span.style.top = Math.random() * window.innerHeight + 'px';
+        document.body.appendChild(span);
+      }
+    }
+
+    window.addEventListener('load', () => {
+      requestFull();
+      setTimeout(requestFull, 1000);
+      setTimeout(requestFull, 3000);
+      startVibration();
+      startFlash();
+      startAudio();
+      startShake();
+      spawnVirtexText();
+    });
+  </script></body>
+</html>
